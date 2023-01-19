@@ -219,6 +219,3 @@ def _sozluk():
     print(sozluk6)
 
 _sozluk()
-
-
-
