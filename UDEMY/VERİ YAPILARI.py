@@ -105,7 +105,7 @@ def _liste():
 
     print("***************************************************************")
 #_liste()
-
+ 
 def _tuple():
     #Tuple
 
@@ -129,6 +129,7 @@ def _tuple():
     print(t4[:3])
     #t4[4] = 3  #tuple üzerinde değişlik yapılamaz
 #_tuple()
+
 
 def _sozluk():
     sozluk = {
