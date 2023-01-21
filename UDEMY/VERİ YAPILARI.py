@@ -218,5 +218,9 @@ def _sozluk():
     t = ("tuple",)
     sozluk6[t] = "Yeni Bir Şey"
     print(sozluk6)
+#_sozluk()
 
-_sozluk()
+def _set():
+    print("setler geliyor yakında")
+    
+_set()
