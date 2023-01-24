@@ -106,12 +106,3 @@ def substringler():
     print(gel_yaz[0:9])#indexten istenilen aralığı seçmeye yarıyor ["başlangıç indexi dahil":"bitiş indexi+1 dahil değil"].
     print(gel_yaz[9:18])
 substringler()
-
-
-
-
-
-
-
-
-
