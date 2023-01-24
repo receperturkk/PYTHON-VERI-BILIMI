@@ -221,6 +221,61 @@ def _sozluk():
 #_sozluk()
 
 def _set():
-    print("setler geliyor yakında")
+    #set oluşturmak
+    #s = set()
+
+    l = [1,"a","ali",123]
+    s = set(l)
+    print(s)
+
+    t = ("a","ali")
+    s = set(t)
+    print(s)
+
+    ali = "lütfen_ata_bakma_uazaya git"
+    s = set(ali)
+    print(s)
+
+    l = ["ali","lutfen","ata","bakma","uzaya","git","git","ali","git"]
+    s = set(l)
+    print(s)
+    print(len(s))
+
+    #set eleman ekleme çıkarma
+
+    l = ["geleceği","yazanlar"]
+    s = set(l)
+
+    s.add("ile")
+    s.add("geleceğe git")
+    print(s)
+
+    s.add("ali")
+    s.add("ile")
+    print(s)
+
+    s.remove("ali")
+    print(s)
+
+    """ s.remove("ali")
+    print(s)"""#listede olmayan elemanı silmeye çalıştığı için hata alır bu yüzden discard() kullanmak daha mantıklı 
+
+    s.discard("ali") #varsa siler yoksa kod akışını bozmadan devam eder.
+    print(s)
+
+    #Diğer işlemler
+    
+    set1 = set([1,3,5])
+    set2 = set([1,2,4])
+    
+    print(set1.difference(set2))#set1 de olup set2 de olmayanları gösterir
+    print(set2.difference(set1))#set2 de olup set1 de olmayanları gösterir
+    print(set1-set2)
+    print(set2-set1)    
+    
+    print(set1.symmetric_difference(set2))#ikisindede olmayanları listeler
+    
+
+    
     
 _set()
