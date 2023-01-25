@@ -275,18 +275,18 @@ def _set():
     set2 = set([1, 2, 4])
 
     print("# set1 de olup set2 de olmayanları gösterir")
-    print(set1.difference(set2))  
+    print(set1.difference(set2))
     print(set1-set2)
     print("# set2 de olup set1 de olmayanları gösterir")
-    print(set2.difference(set1))  
+    print(set2.difference(set1))
     print(set2-set1)
 
     print("# ikisindede olmayanları listeler")
-    print(set1.symmetric_difference(set2))  
+    print(set1.symmetric_difference(set2))
 
-    set3 = set([1,2,5,6])
-    set4 = set([1,2,3,4])
-    
+    set3 = set([1, 2, 5, 6])
+    set4 = set([1, 2, 3, 4])
+
     print("#iki kümenin kesişimini listeler")
     print(set3.intersection(set4))
     print(set3 & set4)
@@ -300,8 +300,8 @@ def _set():
 
     print("Setlerde sorgu işlemleri")
 
-    set5 = set([7,8,9])
-    set6 = set([5,6,7,8,9,10])
+    set5 = set([7, 8, 9])
+    set6 = set([5, 6, 7, 8, 9, 10])
 
     print("iki kümenin kesişiminin boş olup olmadığının sorgulanması")
     print(set5.isdisjoint(set6))
@@ -311,5 +311,6 @@ def _set():
 
     print("bir kümenin bir diğer kümeyi kapsayıp kapsamadığının sorgulanması")
     print(set6.issuperset(set5))
+
 
 _set()
