@@ -78,3 +78,105 @@ eleman_ekle(1)
 eleman_ekle("merhaba")
 print(x)
 
+#KARAR & KONTROL YAPILARI
+
+#TRUE-FALSE SORGULAMALARI
+sinir = 5000
+print(sinir == 5000)
+print(sinir == 4000)
+
+#İF
+sinir = 50000
+gelir = 40000
+if gelir < sinir:
+    print("Gelri sinirdan küçük")
+
+#ELSE
+else:
+    print("gelir sinirden büyük")
+
+#ELİF
+maas = 5000
+gider = 4000
+if maas == gider:
+    print("Bu ayki birikiminiz: 0")
+elif maas < gider:
+    print("Bu ay açığınız var")
+else:
+    birikim = maas - gider
+    print("Bu ayki birikiminiz:",birikim)
+
+#MİNİ UYGULAMA
+def uygulama():
+    sinir = 50000
+    magaza_adi = input("Mağaza Adı Giriniz:")
+    gelir = int(input("Gelirinizi Giriniz:"))
+    if gelir > sinir:
+        print("Tebrikler, promosyon kazandınız!")
+    elif gelir < sinir:
+        print("Uyarı!!!")
+    else:
+        print("Takibe devam")
+#uygulama()
+
+#FOR DÖNGÜSÜ
+ogrenci = ["ali","veli","ışık","berk"]
+for i in ogrenci:
+    print(i)
+
+maaslar = [1000, 2000, 3000, 4000, 5000]
+for i in maaslar:
+    print(i)   
+
+print("-------------------------------------")
+
+#DÖNGÜ VE FONKSİYONLARIN BİRLİKTE KULLANIMI 
+maaslar = [1000, 2000, 3000, 4000, 5000]
+for i in maaslar:
+    print(i)  
+
+#maaslara %20 zam yapılıcak gerekli kodları yazınız.
+'''def zam (x,y):
+    yeni_maas = x+x*(y/100)
+    print(yeni_maas)
+y = int(input("Yüzde kaç zam yapılıcak \'20,30,40\'şeklinde yazınız: "))
+for x in maaslar:
+    zam(x, y)'''
+print("-------------------------------------")
+
+#if,for ve fonksiyonların birlikte kullanımı
+maaslar = [1000, 2000, 3000, 4000, 5000]
+
+#maası 3000'den az olana %20 fazla olanlara %1o zam yapılcak
+def zam (x,y):
+    yeni_maas = x+x*(y/100)
+    print(yeni_maas)
+
+for x in maaslar:
+    if x < 3000:
+        y = 20
+        zam(x, y)
+    else:
+        y = 10
+        zam(x, y)
+
+#BREAK & CONTİNUE
+maaslar = [8000, 5000, 2000, 1000, 3000, 7000,4000,1000]
+maaslar.sort()
+for i in maaslar:
+    if i == 4000:
+        print("kesildi")
+        break
+    print(i)
+
+for i in maaslar:
+    if i == 4000:
+        continue
+    print(i)
+
+#WHİLE
+sayi = 1 
+while sayi < 10:
+    sayi += 1
+    print(sayi) 
+
