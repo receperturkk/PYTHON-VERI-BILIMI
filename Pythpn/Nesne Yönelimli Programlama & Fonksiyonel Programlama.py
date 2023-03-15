@@ -98,4 +98,3 @@ mar1 = Marketing()
 ali = Employees_yeni("ali", "veli", "konya")
 print(ali.Adress, ali.FirstName, ali.LastName)'''
 
-asdasdasd
