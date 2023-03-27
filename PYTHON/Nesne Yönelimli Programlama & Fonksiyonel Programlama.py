@@ -226,3 +226,37 @@ print("--------------------------------------------")
 
 #Modül Oluşturma
 
+import HesapModülü
+HesapModülü.yeni_maas(2000)
+
+import HesapModülü as hm 
+hm.yeni_maas(3000)
+
+from HesapModülü import yeni_maas
+yeni_maas(4000)
+
+print(hm.maaslar)
+
+print("--------------------------------------------")
+
+#Hatalar İstisnalar exceptions
+#ZeroDivisionError hatası
+
+a = 10
+b = 0
+
+try:    
+    print(a/b)
+except ZeroDivisionError:
+    print("Paydada sıfır olamaz")
+
+#Tip hatası
+
+a = 10 
+b = "2"
+
+try:
+    print(a/b)
+except TypeError:
+    print("Sayı ve string birbirine bölünemez.") 
+
