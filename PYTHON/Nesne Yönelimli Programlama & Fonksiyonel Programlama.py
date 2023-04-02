@@ -135,7 +135,7 @@ class LineCounter:
     def count(self):
         return len(self.lines)
 
-lc = LineCounter("C:/Users/recep/Documents/GitHub/work/PYTHON/deneme.txt")
+lc = LineCounter("C:\Github-Repos\PYTHON-VERI-BILIMI\PYTHON\deneme.txt")
 
 print(lc.lines)
 print(lc.count())
@@ -154,7 +154,7 @@ def read(filename):
 def count(lines):
     return len(lines)
 
-example_lines = read("C:/Users/recep/Documents/GitHub/work/PYTHON/deneme.txt")
+example_lines = read("C:\Github-Repos\PYTHON-VERI-BILIMI\PYTHON\deneme.txt")
 lines_count = count(example_lines)
 lines_count
 
